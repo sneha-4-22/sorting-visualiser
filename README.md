@@ -1,7 +1,7 @@
 
 # Sorting Visualizer
 
-Welcome to the Sorting Visualizer app! This interactive tool allows you to visualize various sorting algorithms in action.  Additionally, to ensure a smooth and informative user experience, I've integrated a guided tour feature using Shepherd.
+Welcome to the Sorting Visualizer app! This interactive tool allows you to visualize various sorting algorithms in action.  Additionally, to ensure a smooth and informative user experience, I've integrated a **guided tour** feature using **Shepherd**.
 
 
 You can view the app live [here](https://sorting-visualiser-tau.vercel.app/).
