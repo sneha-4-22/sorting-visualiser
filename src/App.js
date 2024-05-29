@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import Bar from './components/Bar';
 import Form from './components/Form';
+import Shepherd from 'shepherd.js';
+import '../node_modules/shepherd.js/dist/cjs/css/shepherd.css';
 
-// Algorithms
+
 import BubbleSort from './algorithms/BubbleSort';
 import MergeSort from './algorithms/MergeSort';
 import QuickSort from './algorithms/QuickSort';
 import InsertionSort from './algorithms/InsertionSort';
 import SelectionSort from './algorithms/SelectionSort';
 
-// Icons
 import Play from '@material-ui/icons/PlayCircleOutlineRounded';
 import Forward from '@material-ui/icons/SkipNextRounded';
 import Backward from '@material-ui/icons/SkipPreviousRounded';
 import Pause from '@material-ui/icons/PauseCircleOutline';
 import RotateLeft from '@material-ui/icons/RotateLeft';
 
-// Styles
 import './styles/RiseUpText/RiseUpText.css';
 import { riseText } from './styles/RiseUpText/RiseUpText';
 import './App.css';
@@ -34,6 +34,185 @@ class App extends Component {
 		algorithm: 'Bubble Sort',
 	};
 
+	componentDidMount() {
+		this.createTour();
+		window.addEventListener('load', riseText);
+		this.generateBars();
+	}
+
+	createTour = () => {
+		const tour = new Shepherd.Tour({
+			defaultStepOptions: {
+				cancelIcon: {
+					enabled: true,
+				},
+				classes: 'shepherd-theme-arrows',
+				scrollTo: { behavior: 'smooth', block: 'center' },
+			},
+			useModalOverlay: true,
+		});
+	
+		tour.addStep({
+			id: 'step1',
+			text: 'Welcome to the Sorting Visualizer! This is where you can see different sorting algorithms in action.',
+			attachTo: {
+				element: '.page-header_title-main',
+				on: 'bottom',
+			},
+			buttons: [
+				{
+					text: 'Next',
+					action: tour.next,
+					classes: 'shepherd-button shepherd-button-primary',
+				},
+			],
+		});
+	    tour.addStep({
+			id: 'step2',
+			text: 'These are the bars you can sort. Click on + or - to increase or decrease the bar value.',
+			attachTo: {
+				element: '.barsDiv',
+				on: 'bottom',
+			},
+			buttons: [
+				{
+					text: 'Next',
+					action: tour.next,
+					classes: 'shepherd-button shepherd-button-primary',
+				},
+			],
+		});
+		tour.addStep({
+			id: 'step3',
+			text: 'You can control the sorting animation using these buttons. Click the play button to start the animation.',
+			attachTo: {
+				element: '.control-buttons',
+				on: 'bottom',
+			},
+			buttons: [
+				{
+					text: 'Next',
+					action: tour.next,
+					classes: 'shepherd-button shepherd-button-primary',
+				},
+			],
+		});
+	
+		tour.addStep({
+			id: 'step4',
+			text: 'Here, you can select different sorting algorithms from the dropdown menu.',
+			attachTo: {
+				element: '.pannel',
+				on: 'left',
+			},
+			buttons: [
+				{
+					text: 'Next',
+					action: tour.next,
+					classes: 'shepherd-button shepherd-button-primary',
+				},
+			],
+		});
+	
+		tour.addStep({
+			id: 'step5',
+			text: 'Choose "Bubble Sort" to start with.',
+			attachTo: {
+				element: '.pannel',
+				on: 'left',
+			},
+			buttons: [
+				{
+					text: 'Next',
+					action: tour.next,
+					classes: 'shepherd-button shepherd-button-primary',
+				},
+			],
+		});
+	
+		tour.addStep({
+			id: 'step6',
+			text: 'Now, let\'s adjust the number of items in the array.',
+			attachTo: {
+				element: '.pannel',
+				on: 'bottom',
+			},
+			buttons: [
+				{
+					text: 'Next',
+					action: tour.next,
+					classes: 'shepherd-button shepherd-button-primary',
+				},
+			],
+		});
+	
+		tour.addStep({
+			id: 'step7',
+			text: 'Select the desired number of items here.',
+			attachTo: {
+				element: '.pannel',
+				on: 'bottom',
+			},
+			buttons: [
+				{
+					text: 'Next',
+					action: tour.next,
+					classes: 'shepherd-button shepherd-button-primary',
+				},
+			],
+		});
+	
+		tour.addStep({
+			id: 'step8',
+			text: 'You can also change the sorting speed.',
+			attachTo: {
+				element: '.pannel',
+				on: 'right',
+			},
+			buttons: [
+				{
+					text: 'Next',
+					action: tour.next,
+					classes: 'shepherd-button shepherd-button-primary',
+				},
+			],
+		});
+	
+		tour.addStep({
+			id: 'step9',
+			text: 'Adjust the speed here.',
+			attachTo: {
+				element: '.pannel',
+				on: 'right',
+			},
+			buttons: [
+				{
+					text: 'Next',
+					action: tour.next,
+					classes: 'shepherd-button shepherd-button-primary',
+				},
+			],
+		});
+	
+		tour.addStep({
+			id: 'step10',
+			text: 'That\'s it! Click the play button to start sorting.',
+			attachTo: {
+				element: '.control-buttons',
+				on: 'bottom',
+			},
+			buttons: [
+				{
+					text: 'Finish',
+					action: tour.complete,
+					classes: 'shepherd-button shepherd-button-primary',
+				},
+			],
+		});
+	
+		tour.start();
+	};
+	
 	ALGORITHMS = {
 		'Bubble Sort': BubbleSort,
 		'Merge Sort': MergeSort,
@@ -41,11 +220,6 @@ class App extends Component {
 		'Insertion Sort': InsertionSort,
 		'Selection Sort': SelectionSort,
 	};
-
-	componentDidMount() {
-		window.addEventListener('load', riseText);
-		this.generateBars();
-	}
 
 	setTimeouts = () => {
 		let steps = this.state.arraySteps;
@@ -111,7 +285,7 @@ class App extends Component {
 			array: this.state.arraySteps[currentStep],
 			colorKey: this.state.colorSteps[currentStep],
 			currentStep: currentStep,
-		})
+		});
 	};
 
 	stepForward = () => {
@@ -124,7 +298,7 @@ class App extends Component {
 			array: this.state.arraySteps[currentStep],
 			colorKey: this.state.colorSteps[currentStep],
 			currentStep: currentStep,
-		})
+		});
 	};
 
 	generateSteps = () => {
@@ -169,7 +343,6 @@ class App extends Component {
 	changeArray = (index, value) => {
 		let array = this.state.array;
 		array[index] = value;
-		console.log(array);
 		this.setState(
 			{
 				array: array,
@@ -267,6 +440,7 @@ class App extends Component {
 						]}
 						currentValue={this.state.algorithm}
 						onChange={this.changeAlgorithm}
+						className="form-algorithms"
 					/>
 					<Form
 						formLabel='Items'
@@ -281,6 +455,7 @@ class App extends Component {
 						labels={['1x', '2x', '3x', '4x', '5x']}
 						currentValue={this.state.delay}
 						onChange={this.changeSpeed}
+						className="form-speed"
 					/>
 				</div>
 			</div>
