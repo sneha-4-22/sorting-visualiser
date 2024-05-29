@@ -30,7 +30,3 @@ https://github.com/sneha-4-22/sorting-visualiser/assets/112711068/8b550aa0-ac1b-
 - **Material-UI Icons**: Utilized Material-UI icons for intuitive button icons.
 - **CSS**: Custom CSS styles for layout and aesthetics.
 
-## Feedback and Contributions
-
-Feedback and contributions are welcome! If you have any suggestions, bug reports, or feature requests, please feel free to [open an issue]((https://github.com/sneha-4-22/sorting-visualiser/issues)) or submit a pull request.
-
