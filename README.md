@@ -1,7 +1,7 @@
 
 # Sorting Visualizer
 
-Welcome to the Sorting Visualizer app! This interactive tool allows you to visualize various sorting algorithms in action. 
+Welcome to the Sorting Visualizer app! This interactive tool allows you to visualize various sorting algorithms in action.  Additionally, to ensure a smooth and informative user experience, we've integrated a guided tour feature using Shepherd.
 
 **APP PREVIEW**
 
