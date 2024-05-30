@@ -9,7 +9,11 @@ You can view the app live [here](https://sorting-visualiser-tau.vercel.app/).
 **APP PREVIEW**
 
 
-https://github.com/sneha-4-22/sorting-visualiser/assets/112711068/8b550aa0-ac1b-4846-b720-a2d53abb8c79
+
+
+https://github.com/sneha-4-22/sorting-visualiser/assets/112711068/76769086-b0c7-4e35-8258-0911ce1eee33
+
+
 
 
 ## Features
