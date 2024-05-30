@@ -26,8 +26,8 @@ https://github.com/sneha-4-22/sorting-visualiser/assets/112711068/76769086-b0c7-
 
 ## Technologies Used
 
-- **React**: Built with React.js for the frontend user interface.
 - **Shepherd.js**: Integrated Shepherd.js for a guided tour of the app's features.
+- **React**: Built with React.js for the frontend user interface.
 - **Material-UI Icons**: Utilized Material-UI icons for intuitive button icons.
 - **CSS**: Custom CSS styles for layout and aesthetics.
 
