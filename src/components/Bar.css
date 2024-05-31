@@ -3,6 +3,7 @@
 	width: 25px;
 	margin-left: 10px;
 	margin-right: 10px;
+	
 }
 
 .text {
@@ -14,7 +15,7 @@
 
 .quantity-button {
 	text-align: center;
-	background: aqua;
+	background: rgb(235, 149, 241);
 	margin: 1px;
     cursor: pointer;
 }
