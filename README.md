@@ -77,6 +77,17 @@ Follow my GitHub for more awesome projects: [GitHub Profile](https://github.com/
 
 ---
 
+### 🌟 Vote for Me! 🌟
+
+Hey there! If you've enjoyed exploring my Sorting Visualizer project, would you mind sparing a moment to show your support? I'm participating in Quine's community voting, and your vote could make a real difference!
+
+🗳️ **Click Here to Vote**: [Vote for Sorting Visualizer](https://quine.sh/repo/sneha-4-22-sorting-visualiser-746509167?utm_source=copy&utm_share_context=rdp)
+
+Your vote means a lot to me and helps in spreading the word about this project. Thank you for your support! ❤️
+
+
+---
+
 Happy Sorting! 🚀
 
 ---
