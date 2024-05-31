@@ -1,5 +1,5 @@
 ---
-# 🌟 Sorting Visualizer 🌟
+# 🫧 Sorting Visualizer 🩷
 ---
 Welcome to the **Sorting Visualizer** app! This interactive tool allows you to visualize various sorting algorithms in action. To ensure a smooth and informative user experience, I've integrated a **guided tour** feature using **Shepherd**.
 
@@ -13,12 +13,9 @@ You can view the app live [here](https://sorting-visualiser-tau.vercel.app/).
 https://github.com/sneha-4-22/sorting-visualiser/assets/112711068/45705198-7690-44da-83e4-ed29d8ec77de
 
 
-
-
-
 ---
 
-## ✨ Features
+## 🧷 Features
 
 - **Shepherd Guided Tour**: Get started quickly with a guided tour that walks you through the app's features and functionalities, powered by Shepherd.
 - **Sorting Algorithms**: Choose from a selection of sorting algorithms including Bubble Sort, Merge Sort, Quick Sort, Insertion Sort, and Selection Sort.
@@ -71,13 +68,13 @@ Want to tweak the visualization or add new features? Feel free to fork this repo
 
 
 
-### ✨ Stay Connected
+### 🖇️✩ Stay Connected
 
 Follow my GitHub for more awesome projects: [GitHub Profile](https://github.com/sneha-4-22)
 
 ---
 
-### 🌟 Vote for Me! 🌟
+### Vote for Me!💌🍥
 
 Hey there! If you've enjoyed exploring my Sorting Visualizer project, would you mind sparing a moment to show your support? I'm participating in Quine's community voting, and your vote could make a real difference!
 
